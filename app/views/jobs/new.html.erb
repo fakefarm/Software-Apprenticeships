@@ -1,0 +1,55 @@
+<h1>Step 1: Create your ad</h1>
+<hr>
+<%= form_for(@job) do |job| %>
+<h2>Please tell us about the position</h2>
+  <div>
+  <%= job.label :title %>
+  <%= job.text_field :title %>
+  </div>
+  <div>
+    <h3>What is the job category?</h3>
+    <%= job.radio_button :category, "developer", checked: true %>
+    <%= job.label :developer %>
+    <%= job.radio_button :category, "designer" %>
+    <%= job.label :designer %>
+    <%= job.radio_button :category, "intern" %>
+    <%= job.label :intern %>
+  </div>
+  <div>
+  <%= job.label :location %>
+  <%= job.text_field :location %>
+  </div>
+  <div>
+  <%= job.label :description %>
+  <%= job.text_area :description %>
+  </div>
+  <div>
+  <%= job.label :inquiry %>
+  <%= job.text_area :inquiry %>
+  </div>
+  <hr>
+  <h2>Tell us about your company</h2>
+  <div>
+  <%= job.label :company %>
+  <%= job.text_field :company %>
+  </div>
+  <div>
+  <%= job.label :url %>
+  <%= job.text_field :url %>
+  </div>
+  <div>
+  <%= job.label :email %>
+  <%= job.email_field :email, placeholder: "dave@AMB3R.com" %>
+  </div>
+  <div>
+  <%= job.label :reason %>
+  <%= job.text_area :reason %>
+  </div>
+  <hr>
+  <h3>Do you have a senior developer who will make us look good?</h3>
+  <div>
+  <%= job.label :highlight %>
+  <%= job.check_box :highlight, checked_value: true, unchecked_value: false %>
+  </div>
+  <div><%= job.submit "Continue to Step 2 to preview your ad" %></div>
+<% end %>
