@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Job.destroy_all
+
+Job.create(title:"Gig", category:"developer", location: "Ohio", description: "This is going to be a great job for people", inquiry:"send us your stuff", company:"AMB3R", url:"www.amb3r.com", email:"dave@amb3r.com", reason:"everyone needs you")
+
+Job.create(title:"Gig", category:"developer", location: "Ohio", description: "This is going to be a great job for people", inquiry:"send us your stuff", company:"AMB3R", url:"www.amb3r.com", email:"dave@amb3r.com", reason:"everyone needs you")
+
+Job.create(title:"Gig", category:"developer", location: "Ohio", description: "This is going to be a great job for people", inquiry:"send us your stuff", company:"AMB3R", url:"www.amb3r.com", email:"dave@amb3r.com", reason:"everyone needs you")
+
+Job.create(title:"Gig", category:"developer", location: "Ohio", description: "This is going to be a great job for people", inquiry:"send us your stuff", company:"AMB3R", url:"www.amb3r.com", email:"dave@amb3r.com", reason:"everyone needs you")
+
+puts "seed created!"

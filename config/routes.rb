@@ -7,5 +7,7 @@ ApprenticeJobs::Application.routes.draw do
   match "/payment" => "jobs#payment"
   match "/about" => "pages#about"
   match "/terms" => "pages#terms"
+  match "/why-hire-a-software-apprentice" => "pages#why"
+  
   
 end

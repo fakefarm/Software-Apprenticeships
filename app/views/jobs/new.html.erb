@@ -1,6 +1,18 @@
+<div id="container">
 <h1>Step 1: Create your ad</h1>
 <hr>
+
 <%= form_for(@job) do |job| %>
+
+<% if @job.errors.any? %>
+  <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>
+  <ul>
+    <% @job.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <h2>Please tell us about the position</h2>
   <div>
   <%= job.label :title %>
@@ -53,3 +65,4 @@
   </div>
   <div><%= job.submit "Continue to Step 2 to preview your ad" %></div>
 <% end %>
+</div>

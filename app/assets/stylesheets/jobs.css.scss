@@ -1,3 +1,138 @@
 // Place all the styles related to the Jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+*{
+padding: 0;
+margin: 0;	
+text-decoration: none;
+color:black;
+line-height:23px;
+a:hover{
+	color:#C00;
+	-webkit-transition: color 100ms ease-in-out;
+	-moz-transition: color 100ms ease-in-out;
+	-ms-transition: color 100ms ease-in-out;
+	-o-transition: color 100ms ease-in-out;
+	transition: color 100ms ease-in-out;
+}
+}
+
+body{
+	background: #F4F0E6;
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	font-weight: 900;
+	margin: 10px 0;
+}
+
+#wrapper {
+	width: 860px;
+	margin: auto;	
+	header {
+		padding: 20px 0 20px 0;
+		#logo {
+		
+	  } /* logo */
+  } /* header */
+	#container{
+			background: white;
+			padding: 20px;
+			box-shadow: 0px 1px 4px gray;
+	    -webkit-border-radius: 5px;
+	    border-radius: 5px;
+		.job-header{
+			border-bottom: 1px solid black;
+			padding: 5px 0 10px 0;
+			overflow: hidden;
+			.input-search{	
+				float:left;
+				input{
+					height:20px;
+					width: 250px;
+				}			
+			} /* input-search */
+			.new-btn{
+				float: right;
+				a{
+					color: white;
+					border-radius: 5px;
+					-moz-border-radius: 5px;
+					-webkit-border-radius: 5px;
+					font-size: .9em;
+					text-decoration: none;
+					padding: 5px 10px;
+					cursor: pointer;
+					background-color: #393;
+					width: 150px;
+				} /* a */
+			} /* new-btn */
+		} /* job-header */
+				
+		.jobs{
+		padding: 10px 0;
+			
+			ul{
+				a{
+					color:black;
+					li.job{
+						overflow:hidden;
+						list-style: none;
+						border-bottom: 1px solid #e8e8e8;
+						padding: 10px 0 10px 0;				
+						&:hover{
+						background:#F4F0E6;
+						-webkit-transition: background 50ms ease-in-out;
+						-moz-transition: background 50ms ease-in-out;
+						-ms-transition: background 50ms ease-in-out;
+						-o-transition: background 50ms ease-in-out;
+						transition: background 50ms ease-in-out;
+						}
+						.job-info{
+							float:left;
+							.location{ font-weight: bold; padding: 0 10px; }
+							.title{ text-decoration: underline; padding: 0 5px; }
+							.company{ padding: 0 0 0 5px;  }
+						}
+					}
+					.date{ float:right;
+						span{
+							 font-weight: 300;
+							 font-size:.9em;
+						} 	
+					}
+				}
+			} /* ul */
+		} /* jobs */
+	} /* container */
+} /* wrapper */
+
+center{
+	padding: 10px;
+	color: #999;
+	font-size: .9em;
+}
+
+/* ---- About Page 
+--------------------------------------------------------------*/
+
+#bios{
+	overflow:auto;
+	margin: 20px 0 0 0;
+	text-align: justify;
+}
+
+#col1{
+	width: 320px;
+	float:left;
+	padding: 0 50px 0 0;
+}
+
+#col2{
+	width: 320px;
+	float: left;
+}
