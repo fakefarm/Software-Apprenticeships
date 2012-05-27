@@ -8,6 +8,6 @@ ApprenticeJobs::Application.routes.draw do
   match "/about" => "pages#about"
   match "/terms" => "pages#terms"
   match "/why-hire-a-software-apprentice" => "pages#why"
-  
+  match "/apprenticeship-programs" => "pages#programs"
   
 end

@@ -4,12 +4,13 @@
 
 
 
-*{
+* {
 padding: 0;
 margin: 0;	
 text-decoration: none;
-color:black;
+color:#4C4C4C;
 line-height:23px;
+letter-spacing: .5px;
 a:hover{
 	color:#C00;
 	-webkit-transition: color 100ms ease-in-out;
@@ -20,26 +21,37 @@ a:hover{
 }
 }
 
-body{
-	background: #F4F0E6;
+body {
+	background: #F4F0E4;
 	font-family: 'Lato', sans-serif;
 }
 
-h1{
+h1 {
 	font-weight: 900;
 	margin: 10px 0;
+}
+
+h2 {
+	padding: 10px 0;
+}
+
+h3 {
+	padding: 10px 0;
+	
 }
 
 #wrapper {
 	width: 860px;
 	margin: auto;	
+
 	header {
 		padding: 20px 0 20px 0;
 		#logo {
 		
 	  } /* logo */
   } /* header */
-	#container{
+
+	#container {
 			background: white;
 			padding: 20px;
 			box-shadow: 0px 1px 4px gray;
@@ -48,7 +60,7 @@ h1{
 		.job-header{
 			border-bottom: 1px solid black;
 			padding: 5px 0 10px 0;
-			overflow: hidden;
+			overflow: auto;
 			.input-search{	
 				float:left;
 				input{
@@ -56,9 +68,11 @@ h1{
 					width: 250px;
 				}			
 			} /* input-search */
-			.new-btn{
+
+			.new-btn {
 				float: right;
-				a{
+
+				a {
 					color: white;
 					border-radius: 5px;
 					-moz-border-radius: 5px;
@@ -67,40 +81,41 @@ h1{
 					text-decoration: none;
 					padding: 5px 10px;
 					cursor: pointer;
-					background-color: #393;
+					background-color: #68A53A;
 					width: 150px;
 				} /* a */
 			} /* new-btn */
 		} /* job-header */
-				
-		.jobs{
+
+		
+		.jobs {
 		padding: 10px 0;
 			
-			ul{
-				a{
+			ul {
+				a {
 					color:black;
-					li.job{
+					li.job {
 						overflow:hidden;
 						list-style: none;
 						border-bottom: 1px solid #e8e8e8;
 						padding: 10px 0 10px 0;				
-						&:hover{
-						background:#F4F0E6;
+						&:hover {
+						background:#FFFEB9;
 						-webkit-transition: background 50ms ease-in-out;
 						-moz-transition: background 50ms ease-in-out;
 						-ms-transition: background 50ms ease-in-out;
 						-o-transition: background 50ms ease-in-out;
 						transition: background 50ms ease-in-out;
 						}
-						.job-info{
+						.job-info {
 							float:left;
 							.location{ font-weight: bold; padding: 0 10px; }
 							.title{ text-decoration: underline; padding: 0 5px; }
 							.company{ padding: 0 0 0 5px;  }
 						}
 					}
-					.date{ float:right;
-						span{
+					.date { float:right;
+						span {
 							 font-weight: 300;
 							 font-size:.9em;
 						} 	
@@ -111,28 +126,108 @@ h1{
 	} /* container */
 } /* wrapper */
 
-center{
+center {
 	padding: 10px;
 	color: #999;
 	font-size: .9em;
+	margin: 5px 0;
+}
+
+center a {
+	padding:  20px;
 }
 
 /* ---- About Page 
 --------------------------------------------------------------*/
 
-#bios{
+#bios {
 	overflow:auto;
 	margin: 20px 0 0 0;
 	text-align: justify;
 }
 
-#col1{
+#col1 {
 	width: 320px;
 	float:left;
-	padding: 0 50px 0 0;
+	padding: 0 80px 0 30px;
 }
 
-#col2{
+#col2 {
 	width: 320px;
 	float: left;
+}
+
+.photos {
+	height: 200px;	
+	border: white 8px solid;
+	margin: 0 0 30px 0;
+	box-shadow: 1px 1px 3px gray;
+	-moz-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+
+/* --- Pages 
+----------------------------------*/
+
+.merit-image {
+	width: 200px;
+	float: left;
+	border: white 8px solid;
+	margin: 60px 40px 20px 0;
+	box-shadow: 1px 1px 3px gray;
+	-moz-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+.programs {
+	width: 50px;
+	float: left;
+	border: white 8px solid;
+	margin: 0 40px 0 0;
+}
+
+.shortcuts {
+	text-align: right;
+	color: gray;
+	padding: 10px;
+	font-size: 90%;
+	a{
+		margin: 0 0 0 20px;
+	}
+}
+
+.job-description {
+	width: 400px;
+}
+
+#apply {
+background: #B2DFB3;
+padding: 20px;
+margin: 20px 0;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+box-shadow: inset 0 0 5px #81C0B3 ;
+overflow:auto;
+	#why-apply {
+		color: red;
+		width: 350px;
+		float:left;
+		padding: 0 50px 0 0;
+	}
+	#next-steps{
+
+		color: red;
+		width: 350px;
+		float:left;
+	}
+}
+
+
+#container h3 a{
+	color:#004080;
 }

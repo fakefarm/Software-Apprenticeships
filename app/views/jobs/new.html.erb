@@ -1,7 +1,7 @@
 <div id="container">
-<h1>Step 1: Create your ad</h1>
+<h1>Create your ad</h1>
+<br>
 <hr>
-
 <%= form_for(@job) do |job| %>
 
 <% if @job.errors.any? %>
@@ -15,54 +15,57 @@
 
 <h2>Please tell us about the position</h2>
   <div>
-  <%= job.label :title %>
+  <%= job.label :title %><br>
   <%= job.text_field :title %>
-  </div>
+  </div><br>
   <div>
-    <h3>What is the job category?</h3>
+    <p>What is the job category?</p><br>
     <%= job.radio_button :category, "developer", checked: true %>
     <%= job.label :developer %>
     <%= job.radio_button :category, "designer" %>
     <%= job.label :designer %>
     <%= job.radio_button :category, "intern" %>
     <%= job.label :intern %>
-  </div>
+  </div><br>
   <div>
-  <%= job.label :location %>
+  <%= job.label :location %><br>
   <%= job.text_field :location %>
   </div>
   <div>
-  <%= job.label :description %>
-  <%= job.text_area :description %>
+  <%= job.label :description %><br>
+  <%= job.text_area :description, :size => "60x10" %>
   </div>
   <div>
-  <%= job.label :inquiry %>
-  <%= job.text_area :inquiry %>
+  <%= job.label "How would you like to be contacted about the position?" %><br>
+  <%= job.text_area :inquiry, :size => "60x10" %>
   </div>
+  <br>
   <hr>
-  <h2>Tell us about your company</h2>
+  <h2>Please tell us about your company</h2>
   <div>
-  <%= job.label :company %>
+  <%= job.label "Company Name" %><br>
   <%= job.text_field :company %>
   </div>
   <div>
-  <%= job.label :url %>
+  <%= job.label :website %><br>
   <%= job.text_field :url %>
   </div>
   <div>
-  <%= job.label :email %>
+  <%= job.label :email %><br>
   <%= job.email_field :email, placeholder: "dave@AMB3R.com" %>
   </div>
-  <div>
-  <%= job.label :reason %>
-  <%= job.text_area :reason %>
-  </div>
+  <br>
   <hr>
-  <h3>Do you have a senior developer who will make us look good?</h3>
+  <h2>Please tell us a little bit about your apprenticeship program</h2>
   <div>
-  <%= job.label :highlight %>
   <%= job.check_box :highlight, checked_value: true, unchecked_value: false %>
+  <%= job.label "Check this box if you have had more than one full time apprentice" %><br>
   </div>
+  <br>
+  <div>
+   <%= job.label "How will an Apprentice improve his, or her skills?" %><br>
+   <%= job.text_area :reason, :size => "60x10" %>
+ </div>
   <div><%= job.submit "Continue to Step 2 to preview your ad" %></div>
 <% end %>
 </div>
