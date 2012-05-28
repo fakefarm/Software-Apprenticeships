@@ -1,3 +1,25 @@
-<h1>Jobs#preview</h1>
-<p>Find me in app/views/jobs/preview.html.erb</p>
+<div id='container'>
+  <h2>Step 2: Preview your ad</h2>
+  <div class='new-btn'>
+    <%= link_to 'Awesome! Continue to payment', payment_url, class: 'button' %>
+  </div>
+  <hr>
+  <h1><%= @job_preview['title'] %></h1>
+  <h3><%= @job_preview['company'] %><br>
+      <%= @job_preview['location'] %><br>
+      <%= link_to @job_preview['url'] %></h3>
+  <hr>
+  <h3>Description</h3>
+  <p class="job-description"><%= @job_preview['description'] %></p>
+  <section id="apply">
+    <div id="why-apply">
+      <h3>How we instruct Apprentices</h3>
+      <p><%= @job_preview['reason'] %></p>
+    </div><!-- //why-apply -->
+    <div id="next-steps">
+      <h3>How to apply for this Apprenticeship</h3>
+      <p><%= @job_preview['inquiry'] %></p>
+    </div><!-- //next-steps -->
+  </section>
+</div><!-- //container -->
 <%= render 'shared/footer' %>

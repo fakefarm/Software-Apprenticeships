@@ -8,21 +8,21 @@ class JobsController < ApplicationController
   end
 
   def new
+    session[:job_params] ||= {}
     @job = Job.new
   end
 
   def create
-    @job = Job.new(params[:job])
-    if @job.save
-      redirect_to job_url(@job), notice: "Good!"
-    else
-      render "new", notice: "sorry, try again"
-    end      
+    # Will get to this once we start submitting the payment form.
+    # session[:job_params].deep_merge!(params[:order]) if params[:order]
+    # @job = Job.new(session[:job_params])
   end
   
   def preview
+    @job_preview = session[:job_params].deep_merge!(params[:job]) if params[:job]
   end
 
   def payment
+    @job = Job.new
   end
 end
