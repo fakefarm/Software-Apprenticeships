@@ -7,10 +7,10 @@ gem 'rails', '3.2.3'
 
 group :production do
 	gem 'pg'
-	gem 'quiet_assets'
-	gem 'thin'
 end
 
+gem 'quiet_assets'
+gem 'thin'
 
 group :development do
 	gem 'sqlite3',  '~> 1.3.6'
