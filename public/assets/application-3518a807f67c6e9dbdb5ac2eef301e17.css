@@ -1,0 +1,282 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/
+/* line 7, ../../app/assets/stylesheets/jobs.css.scss */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #4C4C4C;
+  line-height: 23px;
+  letter-spacing: .5px;
+}
+/* line 14, ../../app/assets/stylesheets/jobs.css.scss */
+* a:hover {
+  color: #C00;
+  -webkit-transition: color 100ms ease-in-out;
+  -moz-transition: color 100ms ease-in-out;
+  -ms-transition: color 100ms ease-in-out;
+  -o-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out;
+}
+
+/* line 24, ../../app/assets/stylesheets/jobs.css.scss */
+body {
+  background: #F4F0E4;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 29, ../../app/assets/stylesheets/jobs.css.scss */
+h1 {
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+/* line 34, ../../app/assets/stylesheets/jobs.css.scss */
+h2 {
+  padding: 10px 0;
+}
+
+/* line 38, ../../app/assets/stylesheets/jobs.css.scss */
+h3 {
+  padding: 10px 0;
+}
+
+/* line 43, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper {
+  width: 860px;
+  margin: auto;
+  /* header */
+  /* container */
+}
+/* line 47, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper header {
+  padding: 20px 0 20px 0;
+  /* logo */
+}
+/* line 54, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 1px 4px gray;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* job-header */
+  /* jobs */
+}
+/* line 60, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .job-header {
+  border-bottom: 1px solid black;
+  padding: 5px 0 10px 0;
+  overflow: auto;
+  /* input-search */
+  /* new-btn */
+}
+/* line 64, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .job-header .input-search {
+  float: left;
+}
+/* line 66, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .job-header .input-search input {
+  height: 20px;
+  width: 250px;
+}
+/* line 72, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .job-header .new-btn {
+  float: right;
+  /* a */
+}
+/* line 75, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .job-header .new-btn a {
+  color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: .9em;
+  text-decoration: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #68A53A;
+  width: 150px;
+}
+/* line 91, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs {
+  padding: 10px 0;
+  /* ul */
+}
+/* line 95, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a {
+  color: black;
+}
+/* line 97, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job {
+  overflow: hidden;
+  list-style: none;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0 10px 0;
+}
+/* line 102, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job:hover {
+  background: #FFFEB9;
+  -webkit-transition: background 50ms ease-in-out;
+  -moz-transition: background 50ms ease-in-out;
+  -ms-transition: background 50ms ease-in-out;
+  -o-transition: background 50ms ease-in-out;
+  transition: background 50ms ease-in-out;
+}
+/* line 110, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job .job-info {
+  float: left;
+}
+/* line 112, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job .job-info .location {
+  font-weight: bold;
+  padding: 0 10px;
+}
+/* line 113, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job .job-info .title {
+  text-decoration: underline;
+  padding: 0 5px;
+}
+/* line 114, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a li.job .job-info .company {
+  padding: 0 0 0 5px;
+}
+/* line 117, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a .date {
+  float: right;
+}
+/* line 118, ../../app/assets/stylesheets/jobs.css.scss */
+#wrapper #container .jobs ul a .date span {
+  font-weight: 300;
+  font-size: .9em;
+}
+
+/* wrapper */
+/* line 129, ../../app/assets/stylesheets/jobs.css.scss */
+center {
+  padding: 10px;
+  color: #999;
+  font-size: .9em;
+  margin: 5px 0;
+}
+
+/* line 136, ../../app/assets/stylesheets/jobs.css.scss */
+center a {
+  padding: 20px;
+}
+
+/* ---- About Page 
+--------------------------------------------------------------*/
+/* line 143, ../../app/assets/stylesheets/jobs.css.scss */
+#bios {
+  overflow: auto;
+  margin: 20px 0 0 0;
+  text-align: justify;
+}
+
+/* line 149, ../../app/assets/stylesheets/jobs.css.scss */
+#col1 {
+  width: 320px;
+  float: left;
+  padding: 0 80px 0 30px;
+}
+
+/* line 155, ../../app/assets/stylesheets/jobs.css.scss */
+#col2 {
+  width: 320px;
+  float: left;
+}
+
+/* line 160, ../../app/assets/stylesheets/jobs.css.scss */
+.photos {
+  height: 200px;
+  border: white 8px solid;
+  margin: 0 0 30px 0;
+  box-shadow: 1px 1px 3px gray;
+  -moz-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -webkit-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -o-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -ms-transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+  transform: scale(1) rotate(2deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+
+/* --- Pages 
+----------------------------------*/
+/* line 175, ../../app/assets/stylesheets/jobs.css.scss */
+.merit-image {
+  width: 200px;
+  float: left;
+  border: white 8px solid;
+  margin: 60px 40px 20px 0;
+  box-shadow: 1px 1px 3px gray;
+  -moz-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -webkit-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -o-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+  -ms-transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+  transform: scale(1) rotate(-2deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+
+/* line 187, ../../app/assets/stylesheets/jobs.css.scss */
+.programs {
+  width: 50px;
+  float: left;
+  border: white 8px solid;
+  margin: 0 40px 0 0;
+}
+
+/* line 194, ../../app/assets/stylesheets/jobs.css.scss */
+.shortcuts {
+  text-align: right;
+  color: gray;
+  padding: 10px;
+  font-size: 90%;
+}
+/* line 199, ../../app/assets/stylesheets/jobs.css.scss */
+.shortcuts a {
+  margin: 0 0 0 20px;
+}
+
+/* line 204, ../../app/assets/stylesheets/jobs.css.scss */
+.job-description {
+  width: 400px;
+}
+
+/* line 208, ../../app/assets/stylesheets/jobs.css.scss */
+#apply {
+  background: #B2DFB3;
+  padding: 20px;
+  margin: 20px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #81C0B3;
+  overflow: auto;
+}
+/* line 216, ../../app/assets/stylesheets/jobs.css.scss */
+#apply #why-apply {
+  color: red;
+  width: 350px;
+  float: left;
+  padding: 0 50px 0 0;
+}
+/* line 222, ../../app/assets/stylesheets/jobs.css.scss */
+#apply #next-steps {
+  color: red;
+  width: 350px;
+  float: left;
+}
+
+/* line 231, ../../app/assets/stylesheets/jobs.css.scss */
+#container h3 a {
+  color: #004080;
+}
