@@ -1,7 +1,7 @@
 <div id="container">
 <h2>Step 1: Create your ad</h2>
 <hr>
-<%= form_for @job, url: jobs_preview_url do |job| %>
+<%= form_for @job do |job| %>
 
 <% if @job.errors.any? %>
   <h2><%= pluralize(@job.errors.count, "error") %> prohibited this job from being saved:</h2>

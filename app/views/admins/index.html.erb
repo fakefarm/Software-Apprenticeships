@@ -1,0 +1,25 @@
+<div id="container">
+<div class="job-header">
+  <div class="input-search">
+    <input type="text">
+  </div>
+</div>
+<div class="jobs">
+  <ul>
+    <% @jobs.each do |job| %>
+    <a href="/admins/<%= job.id %>">
+    <li class="job">
+      <div class="job-info">
+        <span class="location"><%= job.location %></span>
+        <span class="title"><%= job.title %></span> at
+        <span class="company"><%= job.company %></span>.
+      </div>
+      <div class="date">
+        <span><%= job.created_at.to_date.strftime("%b %m") %></span>
+      </div>
+    </li></a>
+  <% end %>
+  </ul>
+</div>  
+</div>
+<%= render 'shared/footer' %>

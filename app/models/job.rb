@@ -10,5 +10,7 @@ class Job < ActiveRecord::Base
   validates :email, presence: true
   validates :reason, presence: true
   
-
+  scope :active, order("created_at desc").where(published: true)
+  scope :pending, order("created_at desc").where(published: false)
+  
 end
