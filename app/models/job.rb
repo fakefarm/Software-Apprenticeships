@@ -1,5 +1,5 @@
 class Job < ActiveRecord::Base
-  attr_accessible :title, :category, :location, :description, :inquiry, :company, :url, :email, :reason, :highlight
+  attr_accessible :title, :location, :description, :inquiry, :company, :url, :email, :reason
   
   validates :title, presence: true
   validates :location, presence: true

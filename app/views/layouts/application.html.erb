@@ -26,8 +26,19 @@
 <header>
   <div id="logo">
     <h1><%= link_to "Software Apprenticeships", jobs_url %></h1>
+    <% if current_user %>
+      <% if is_admin? %>
+        <span class="dash"><%= link_to "Dashboard", admins_path %></span>
+      <% end %>
+      <span class="nav-links"><%= link_to "Log Out", logout_path %></span>
+    <% else %>
+      <span class="nav-links"><%= link_to "Dave & Ralph's Admin Login", login_path %></span>
+    <% end %>  
   </div>
-  <span><%= link_to "Log Out", logout_path %>
+  <% flash.each do |flash_key, msg| %>
+  <%= content_tag :div, msg, id: flash_key %>
+  <% end %>
+  
 </header>
 <%= yield %>
 </body>

@@ -1,4 +1,3 @@
-<%= render 'shared/shortcuts' %>
 <div id="container">
   <h1>Top 3 reasons to hire a Software Apprentice.</h1>
   <h2>1. Apprentices add value.</h2>
@@ -8,11 +7,13 @@
   <p>To create an apprenticeship program, you need three ingredients: <br>1) A mentor who is excited to work with a beginner, <br>2) A team that is willing to incorporate a beginner, and <br> 3) A corporate culture willing to allow beginners to participate.
 
   <h2>3. You can't afford not to.</h2>
-  <p>You need coders to grow your business. But so does <%= link_to "everyone else","http://robots.thoughtbot.com/post/3310910483/a-shortage" %>. The bad news is you're going to have trouble recruiting programmers unless you're well known, cool, or pay top-dollar. The good news is that with the rise of "Hacker Academies" like <%= link_to "Code Academy", "http://www.codeacademy.org" %>, <%= link_to "Dev Bootcamp", "http://www.devbootcamp.com" %>, <%=  link_to "Hacker School", "https://www.hackerschool.com/" %>, it is becoming easier to find world-class beginners. The great news is that with the right approach and ingredients, you can turn these high potential beginners into effective software developers, loyal to your business.</p>
+  <p>You need coders to grow your business. But so does <%= link_to "everyone else","http://robots.thoughtbot.com/post/3310910483/a-shortage", class: "why-links" %>. The bad news is you're going to have trouble recruiting programmers unless you're well known, cool, or pay top-dollar. The good news is that with the rise of "Hacker Academies" like <%= link_to "Code Academy", "http://www.codeacademy.org", class: "why-links"  %>, <%= link_to "Dev Bootcamp", "http://www.devbootcamp.com", class: "why-links"  %>, <%=  link_to "Hacker School", "https://www.hackerschool.com/", class: "why-links"  %>, it is becoming easier to find world-class beginners. The great news is that with the right approach and ingredients, you can turn these high potential beginners into effective software developers, loyal to your business.</p>
 
   <p>If you're interested in finding out more about apprenticeship, or need help starting a program, send an email to 
-  <%= mail_to "support@apprentice.us", "dave@apprentice.us" %>.</p>
+  <%= mail_to "support@apprentice.us", "support@apprentice.us", class: "why-links"  %>.</p>
 
-  <p>David H. Hoover, Co-author, <%= link_to "Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman", "http://shop.oreilly.com/product/9780596518387.do" %>.</p>
+  <p>David H. Hoover, Co-author, <%= link_to "Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman", "http://shop.oreilly.com/product/9780596518387.do", class: "why-links"  %>.</p>
+  
+  <p>Excerpts from <%= link_to "Create an Apprenticeship Program", "https://s3.amazonaws.com/apprentice.us/Apprenticeship-Programs.pdf", class: "why-links"  %></p>
 </div>
 <%= render 'shared/footer' %>

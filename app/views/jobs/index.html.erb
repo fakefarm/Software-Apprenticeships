@@ -1,7 +1,11 @@
 <div id="container">
 <div class="job-header">
   <div class="input-search">
-    <input type="text">
+    <%= form_tag jobs_path, method: :get do %>
+      <%= text_field_tag :keyword, nil, :placeholder => "Search by title or city" %>
+    <% end %>
+
+
   </div>
   <div class="new-btn">
       <%= link_to "Post a new Apprenticeship", new_job_url, class: "button"%>
@@ -9,6 +13,7 @@
 </div>
 <div class="jobs">
   <ul>
+    <% if @jobs.any? %>
     <% @jobs.each do |job| %>
 <a href="/jobs/<%= job.id %>">
     <li class="job">
@@ -23,6 +28,9 @@
     </li></a>
   <% end %>
   </ul>
+  <% else %>
+  <h3>Sorry, no results.</h3>
+  <% end %>
 </div>  
 </div>
 <%= render 'shared/footer' %>

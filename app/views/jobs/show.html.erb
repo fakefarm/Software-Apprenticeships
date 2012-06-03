@@ -1,11 +1,23 @@
 <!-- <%= render 'shared/more' %> -->
 <div id="container">
   <h1><%= @job.title %></h1>
-  <h3><%= @job.company %><br><%= @job.location %><br><%= link_to @job.url %></h3>
+  <h3><%= @job.company %><br><%= @job.location %><br><%= link_to @job.url, "http://#{@job.url}" %></h3>
   
   <hr>
-  <h3>Description</h3>
-  <p class="job-description"><%= @job.description %></p>
+<div class="description-tweet">
+<section class="job-description">
+      <h3>Description</h3>
+      <p><%= @job.description %></p>
+  </section>
+
+  <aside>
+    <h3>Tell your friends!</h3>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this Software Apprenticeship!" data-via="CodeApprentices" data-size="large" data-hashtags="SoftwareApprenticeship">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </aside>
+</div>
+
+
   <section id="apply">
   <div id="why-apply">
   <h3>How we instruct Apprentices</h3>

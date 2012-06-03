@@ -1,6 +1,14 @@
 class JobsController < ApplicationController
-  def index
-    @jobs = Job.order("created_at desc").active
+  def index  
+    if params[:keyword].present?
+      jobs = Job.where('LOWER(location) LIKE ? OR LOWER(title) LIKE ?',
+                        "%#{params[:keyword].downcase}%",
+                        "%#{params[:keyword].downcase}%")
+
+      @jobs = jobs.active.limit(20)
+    else
+      @jobs = Job.order("created_at desc").active
+    end
   end
 
   def show

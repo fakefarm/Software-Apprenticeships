@@ -3,15 +3,7 @@
   <%= job.label :title %><br>
   <%= job.text_field :title %>
   </div><br>
-  <div>
-    <p>What is the job category?</p><br>
-    <%= job.radio_button :category, "developer", checked: true %>
-    <%= job.label :developer %>
-    <%= job.radio_button :category, "designer" %>
-    <%= job.label :designer %>
-    <%= job.radio_button :category, "intern" %>
-    <%= job.label :intern %>
-  </div><br>
+ 
   <div>
   <%= job.label :location %><br>
   <%= job.text_field :location %>
@@ -42,10 +34,6 @@
   <br>
   <hr>
   <h2>Please tell us a little bit about your apprenticeship program</h2>
-  <div>
-  <%= job.check_box :highlight, checked_value: true, unchecked_value: false %>
-  <%= job.label "Check this box if you have had more than one full time apprentice" %><br>
-  </div>
   <br>
   <div>
    <%= job.label "How will an Apprentice improve his, or her skills?" %><br>
